@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" width="900" height="180" shape-rendering="crispEdges">
+  <defs>
+    <radialGradient id="fireGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffb347" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="180" fill="#05060f"/>
+
+  <!-- ground -->
+  <rect x="0" y="150" width="900" height="30" fill="#141a2e"/>
+
+  <!-- fireflies -->
+  <g fill="#a8ffb0">
+    <rect x="150" y="60" width="4" height="4"><animate attributeName="opacity" values="0;1;0" dur="3.4s" repeatCount="indefinite"/></rect>
+    <rect x="700" y="80" width="4" height="4"><animate attributeName="opacity" values="1;0;1" dur="2.8s" repeatCount="indefinite"/></rect>
+    <rect x="620" y="50" width="4" height="4"><animate attributeName="opacity" values="0;1;0" dur="3.9s" begin="0.6s" repeatCount="indefinite"/></rect>
+    <rect x="220" y="90" width="4" height="4"><animate attributeName="opacity" values="1;0;1" dur="3.1s" begin="1s" repeatCount="indefinite"/></rect>
+    <rect x="780" y="55" width="4" height="4"><animate attributeName="opacity" values="0;1;0" dur="2.6s" begin="0.3s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- campfire glow -->
+  <circle cx="450" cy="130" r="70" fill="url(#fireGlow)">
+    <animate attributeName="r" values="60;75;60" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- logs -->
+  <g fill="#5a3d2b">
+    <rect x="420" y="146" width="60" height="8"/>
+    <rect x="430" y="140" width="40" height="8" transform="rotate(15 450 144)"/>
+    <rect x="430" y="140" width="40" height="8" transform="rotate(-15 450 144)"/>
+  </g>
+
+  <!-- flame (flickering) -->
+  <g>
+    <path fill="#ff9c3d" d="M450 148 q-14 -18 -4 -34 q4 10 8 6 q-2 -14 6 -22 q2 16 10 20 q6 -6 4 -14 q10 12 4 30 q10 -6 8 -16 q6 16 -6 30 q-16 6 -30 0z">
+      <animate attributeName="d" dur="0.55s" repeatCount="indefinite"
+        values="
+        M450 148 q-14 -18 -4 -34 q4 10 8 6 q-2 -14 6 -22 q2 16 10 20 q6 -6 4 -14 q10 12 4 30 q10 -6 8 -16 q6 16 -6 30 q-16 6 -30 0z;
+        M450 148 q-12 -22 -2 -36 q5 9 8 5 q-1 -16 7 -24 q2 18 9 22 q6 -5 4 -15 q9 14 3 32 q9 -7 7 -17 q7 18 -8 32 q-16 6 -28 1z;
+        M450 148 q-14 -18 -4 -34 q4 10 8 6 q-2 -14 6 -22 q2 16 10 20 q6 -6 4 -14 q10 12 4 30 q10 -6 8 -16 q6 16 -6 30 q-16 6 -30 0z"/>
+    </path>
+    <path fill="#ffe27a" d="M450 148 q-8 -12 -2 -22 q3 6 5 4 q-1 -8 4 -13 q2 9 6 11 q3 -3 2 -8 q6 8 2 18 q-8 6 -17 10z">
+      <animate attributeName="d" dur="0.4s" repeatCount="indefinite"
+        values="
+        M450 148 q-8 -12 -2 -22 q3 6 5 4 q-1 -8 4 -13 q2 9 6 11 q3 -3 2 -8 q6 8 2 18 q-8 6 -17 10z;
+        M450 148 q-6 -14 -1 -24 q3 5 4 3 q-1 -9 5 -14 q1 10 5 12 q3 -3 1 -9 q5 9 1 20 q-7 7 -15 12z;
+        M450 148 q-8 -12 -2 -22 q3 6 5 4 q-1 -8 4 -13 q2 9 6 11 q3 -3 2 -8 q6 8 2 18 q-8 6 -17 10z"/>
+    </path>
+  </g>
+
+  <!-- pixel cat silhouette watching the fire -->
+  <g fill="#232a45">
+    <rect x="360" y="140" width="24" height="14"/>
+    <rect x="356" y="128" width="14" height="14"/>
+    <rect x="352" y="122" width="5" height="7"/>
+    <rect x="365" y="122" width="5" height="7"/>
+    <rect x="380" y="132" width="10" height="4">
+      <animateTransform attributeName="transform" type="rotate" values="0 380 134;-25 380 134;0 380 134" dur="1.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g fill="#ffd76a">
+    <rect x="360" y="132" width="2" height="2"><animate attributeName="opacity" values="1;1;0;1" dur="4s" repeatCount="indefinite"/></rect>
+    <rect x="366" y="132" width="2" height="2"><animate attributeName="opacity" values="1;1;0;1" dur="4s" repeatCount="indefinite"/></rect>
+  </g>
+</svg>
