@@ -1,101 +1,173 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" shape-rendering="crispEdges">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" shape-rendering="crispEdges" role="img" aria-label="Pokemon style battle scene: a wild developer appeared">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#05060f"/>
-      <stop offset="65%" stop-color="#0d1224"/>
-      <stop offset="100%" stop-color="#141a2e"/>
+      <stop offset="0%" stop-color="#070a18"/>
+      <stop offset="55%" stop-color="#141d3d"/>
+      <stop offset="100%" stop-color="#2a3565"/>
     </linearGradient>
-    <linearGradient id="screenGlow" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#39ff8f"/>
-      <stop offset="100%" stop-color="#12331f"/>
+    <linearGradient id="hpfill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#78e06a"/>
+      <stop offset="100%" stop-color="#3fbf55"/>
     </linearGradient>
+    <radialGradient id="flash" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fff8d0" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#ffd76e" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ffd76e" stop-opacity="0"/>
+    </radialGradient>
+    <g id="pball" shape-rendering="geometricPrecision">
+      <circle cx="0" cy="0" r="26" fill="#f6f6f6" stroke="#17171a" stroke-width="4"/>
+      <path d="M-26 0 A26 26 0 0 1 26 0 Z" fill="#ee1515"/>
+      <rect x="-27" y="-4.5" width="54" height="9" fill="#17171a"/>
+      <circle cx="0" cy="0" r="9" fill="#f6f6f6" stroke="#17171a" stroke-width="4"/>
+      <circle cx="0" cy="0" r="3.5" fill="#c9c9c9"/>
+      <path d="M-16 -14 A22 22 0 0 1 -4 -22" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.75" stroke-linecap="round"/>
+    </g>
+    <g id="miniball" shape-rendering="geometricPrecision">
+      <circle cx="0" cy="0" r="9" fill="#f6f6f6" stroke="#17171a" stroke-width="2"/>
+      <path d="M-9 0 A9 9 0 0 1 9 0 Z" fill="#ee1515"/>
+      <rect x="-9.5" y="-1.6" width="19" height="3.2" fill="#17171a"/>
+      <circle cx="0" cy="0" r="3" fill="#f6f6f6" stroke="#17171a" stroke-width="1.6"/>
+    </g>
   </defs>
 
-  <rect x="0" y="0" width="900" height="260" fill="url(#sky)"/>
+  <rect width="900" height="260" fill="url(#sky)"/>
 
   <!-- stars -->
   <g fill="#ffffff">
-    <rect x="40" y="20" width="4" height="4"><animate attributeName="opacity" values="1;0.15;1" dur="2.6s" repeatCount="indefinite"/></rect>
-    <rect x="120" y="45" width="4" height="4"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" repeatCount="indefinite"/></rect>
-    <rect x="210" y="18" width="4" height="4"><animate attributeName="opacity" values="1;0.1;1" dur="2.2s" begin="0.4s" repeatCount="indefinite"/></rect>
-    <rect x="300" y="55" width="4" height="4"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.9s" repeatCount="indefinite"/></rect>
-    <rect x="380" y="25" width="4" height="4"><animate attributeName="opacity" values="1;0.2;1" dur="3.4s" begin="0.8s" repeatCount="indefinite"/></rect>
-    <rect x="470" y="40" width="4" height="4"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/></rect>
-    <rect x="560" y="15" width="4" height="4"><animate attributeName="opacity" values="1;0.15;1" dur="2.8s" begin="0.3s" repeatCount="indefinite"/></rect>
-    <rect x="640" y="50" width="4" height="4"><animate attributeName="opacity" values="0.25;1;0.25" dur="3.2s" repeatCount="indefinite"/></rect>
-    <rect x="760" y="22" width="4" height="4"><animate attributeName="opacity" values="1;0.2;1" dur="2.5s" begin="0.6s" repeatCount="indefinite"/></rect>
-    <rect x="830" y="48" width="4" height="4"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.0s" repeatCount="indefinite"/></rect>
-    <rect x="90" y="70" width="3" height="3"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.1s" repeatCount="indefinite"/></rect>
-    <rect x="700" y="75" width="3" height="3"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.7s" repeatCount="indefinite"/></rect>
+    <rect x="48" y="18" width="4" height="4"><animate attributeName="opacity" values="1;0.1;1" dur="2.6s" repeatCount="indefinite"/></rect>
+    <rect x="132" y="40" width="3" height="3"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" repeatCount="indefinite"/></rect>
+    <rect x="238" y="14" width="4" height="4"><animate attributeName="opacity" values="1;0.15;1" dur="2.2s" begin="0.4s" repeatCount="indefinite"/></rect>
+    <rect x="352" y="30" width="3" height="3"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.9s" repeatCount="indefinite"/></rect>
+    <rect x="470" y="16" width="4" height="4"><animate attributeName="opacity" values="1;0.2;1" dur="3.4s" begin="0.8s" repeatCount="indefinite"/></rect>
+    <rect x="556" y="44" width="3" height="3"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" repeatCount="indefinite"/></rect>
+    <rect x="812" y="22" width="4" height="4"><animate attributeName="opacity" values="1;0.15;1" dur="2.8s" begin="0.3s" repeatCount="indefinite"/></rect>
+    <rect x="866" y="58" width="3" height="3"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.2s" repeatCount="indefinite"/></rect>
+    <rect x="640" y="12" width="3" height="3"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.1s" repeatCount="indefinite"/></rect>
   </g>
 
-  <!-- moon (pixel crescent) -->
-  <g fill="#ffe9a8">
-    <rect x="760" y="30" width="10" height="10"/>
-    <rect x="770" y="20" width="10" height="10"/>
-    <rect x="770" y="40" width="10" height="10"/>
-    <rect x="780" y="20" width="10" height="30"/>
-    <rect x="790" y="20" width="10" height="30"/>
-    <rect x="800" y="30" width="10" height="10"/>
-    <rect x="800" y="40" width="10" height="10"/>
-  </g>
-  <g fill="#0d1224">
-    <rect x="774" y="26" width="10" height="18"/>
+  <!-- moon -->
+  <circle cx="806" cy="52" r="22" fill="#ffe9a8" shape-rendering="geometricPrecision"/>
+  <g fill="#101838" opacity="0.85" shape-rendering="geometricPrecision">
+    <circle cx="797" cy="44" r="5"/><circle cx="812" cy="58" r="3.4"/><circle cx="815" cy="46" r="2.1"/>
   </g>
 
-  <!-- floor -->
-  <rect x="0" y="230" width="900" height="30" fill="#1b2138"/>
-
-  <!-- desk -->
-  <rect x="280" y="195" width="340" height="12" fill="#5a3d2b"/>
-  <rect x="290" y="207" width="14" height="23" fill="#42291c"/>
-  <rect x="596" y="207" width="14" height="23" fill="#42291c"/>
-
-  <!-- monitor -->
-  <rect x="380" y="120" width="140" height="90" fill="#1c1f2b"/>
-  <rect x="388" y="128" width="124" height="66" fill="#04140a"/>
-  <rect x="388" y="128" width="124" height="66" fill="url(#screenGlow)">
-    <animate attributeName="opacity" values="0.55;0.85;0.55" dur="2.4s" repeatCount="indefinite"/>
-  </rect>
-  <g fill="#7dffb0">
-    <rect x="396" y="136" width="40" height="5"><animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/></rect>
-    <rect x="396" y="146" width="70" height="5"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.9s" repeatCount="indefinite"/></rect>
-    <rect x="396" y="156" width="55" height="5"><animate attributeName="opacity" values="1;0.4;1" dur="2.1s" repeatCount="indefinite"/></rect>
-    <rect x="396" y="166" width="30" height="5"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.7s" repeatCount="indefinite"/></rect>
-    <rect x="396" y="176" width="8" height="5"><animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/></rect>
-  </g>
-  <rect x="440" y="210" width="20" height="10" fill="#1c1f2b"/>
-  <rect x="420" y="220" width="60" height="8" fill="#12141e"/>
-
-  <!-- keyboard -->
-  <rect x="392" y="196" width="96" height="10" fill="#2a2e3f"/>
-
-  <!-- coffee mug with steam -->
-  <rect x="330" y="188" width="16" height="14" fill="#e2e2e2"/>
-  <rect x="346" y="192" width="4" height="6" fill="#e2e2e2"/>
-  <g stroke="#cfd8e3" stroke-width="2" fill="none" opacity="0.7">
-    <path d="M336 184 q3 -6 0 -10">
-      <animate attributeName="d" values="M336 184 q3 -6 0 -10;M336 184 q-3 -6 0 -10;M336 184 q3 -6 0 -10" dur="2.4s" repeatCount="indefinite"/>
-    </path>
-    <path d="M342 184 q-3 -6 0 -10">
-      <animate attributeName="d" values="M342 184 q-3 -6 0 -10;M342 184 q3 -6 0 -10;M342 184 q-3 -6 0 -10" dur="2.6s" repeatCount="indefinite"/>
-    </path>
+  <!-- distant hills -->
+  <g fill="#1a2748">
+    <rect x="0" y="150" width="900" height="40"/>
+    <rect x="40" y="138" width="90" height="14"/><rect x="70" y="128" width="40" height="12"/>
+    <rect x="230" y="140" width="120" height="12"/><rect x="280" y="130" width="46" height="12"/>
+    <rect x="470" y="136" width="140" height="16"/><rect x="520" y="124" width="52" height="14"/>
+    <rect x="700" y="142" width="150" height="10"/><rect x="760" y="132" width="46" height="12"/>
   </g>
 
-  <!-- plant -->
-  <rect x="560" y="182" width="20" height="18" fill="#b5652b"/>
-  <g fill="#3ecf6e">
-    <g>
-      <rect x="565" y="160" width="6" height="24"/>
-      <rect x="571" y="150" width="6" height="20"/>
-      <rect x="577" y="162" width="6" height="20"/>
-      <animateTransform attributeName="transform" type="rotate" values="-2 570 200; 2 570 200; -2 570 200" dur="3.6s" repeatCount="indefinite"/>
+  <!-- ground -->
+  <rect x="0" y="176" width="900" height="84" fill="#1d3325"/>
+  <rect x="0" y="176" width="900" height="6" fill="#2b4a33"/>
+
+  <!-- tall grass, rustling -->
+  <g fill="#20512f">
+    <g><rect x="10" y="164" width="6" height="14"/><rect x="20" y="158" width="6" height="20"/><rect x="30" y="166" width="6" height="12"/>
+      <animateTransform attributeName="transform" type="skewX" values="0;5;0;-5;0" dur="3.4s" repeatCount="indefinite"/></g>
+    <g><rect x="250" y="162" width="6" height="16"/><rect x="260" y="156" width="6" height="22"/><rect x="270" y="164" width="6" height="14"/>
+      <animateTransform attributeName="transform" type="skewX" values="0;-5;0;5;0" dur="3.9s" repeatCount="indefinite"/></g>
+    <g><rect x="500" y="164" width="6" height="14"/><rect x="510" y="156" width="6" height="22"/><rect x="520" y="162" width="6" height="16"/>
+      <animateTransform attributeName="transform" type="skewX" values="0;5;0;-5;0" dur="3.1s" repeatCount="indefinite"/></g>
+    <g><rect x="838" y="162" width="6" height="16"/><rect x="848" y="154" width="6" height="24"/><rect x="858" y="164" width="6" height="14"/>
+      <animateTransform attributeName="transform" type="skewX" values="0;-6;0;6;0" dur="4.2s" repeatCount="indefinite"/></g>
+  </g>
+
+  <!-- battle platform -->
+  <g shape-rendering="geometricPrecision">
+    <ellipse cx="700" cy="178" rx="118" ry="22" fill="#2c5138"/>
+    <ellipse cx="700" cy="174" rx="118" ry="22" fill="#3a6a48"/>
+    <ellipse cx="700" cy="170" rx="104" ry="17" fill="#47804f" opacity="0.55"/>
+  </g>
+
+  <!-- capture flash behind the ball -->
+  <circle cx="700" cy="130" r="86" fill="url(#flash)">
+    <animate attributeName="opacity" values="0.25;0.8;0.25" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- the wild pokeball, doing the capture wiggle -->
+  <g transform="translate(700,126)">
+    <animateTransform attributeName="transform" type="translate" values="700 126;700 118;700 126" dur="2.6s" repeatCount="indefinite"/>
+    <g transform="scale(1.5)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="0;0;-16;14;-10;6;0;0;0;0" dur="3.2s" repeatCount="indefinite"/>
+        <use href="#pball"/>
+      </g>
     </g>
   </g>
 
-  <!-- desk chair -->
-  <g fill="#20263a">
-    <rect x="296" y="150" width="30" height="8"/>
-    <rect x="296" y="158" width="8" height="40"/>
+  <!-- sparkles around the ball -->
+  <g fill="#ffe27a">
+    <rect x="620" y="82" width="5" height="5"><animate attributeName="opacity" values="0;1;0" dur="1.7s" repeatCount="indefinite"/></rect>
+    <rect x="782" y="98" width="5" height="5"><animate attributeName="opacity" values="1;0;1" dur="2.1s" repeatCount="indefinite"/></rect>
+    <rect x="646" y="152" width="4" height="4"><animate attributeName="opacity" values="0;1;0" dur="1.4s" begin="0.5s" repeatCount="indefinite"/></rect>
+    <rect x="766" y="52" width="4" height="4"><animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="0.9s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- trainer back sprite, bottom left -->
+  <g>
+    <rect x="118" y="96" width="58" height="16" fill="#ee1515"/>
+    <rect x="112" y="106" width="70" height="8" fill="#ee1515"/>
+    <rect x="112" y="114" width="70" height="5" fill="#f2f2f2"/>
+    <rect x="114" y="119" width="66" height="18" fill="#2b1d16"/>
+    <rect x="136" y="137" width="22" height="8" fill="#e8b58a"/>
+    <rect x="104" y="145" width="86" height="44" fill="#2f4a86"/>
+    <rect x="132" y="145" width="30" height="9" fill="#f2f2f2"/>
+    <rect x="104" y="145" width="10" height="44" fill="#24396a"/>
+    <rect x="180" y="145" width="10" height="44" fill="#24396a"/>
+    <rect x="92" y="152" width="14" height="38" fill="#2f4a86"/>
+    <rect x="188" y="152" width="14" height="38" fill="#2f4a86"/>
+    <rect x="92" y="182" width="14" height="10" fill="#e8b58a"/>
+    <rect x="110" y="189" width="74" height="10" fill="#1b2540"/>
+    <g transform="translate(196,176)">
+      <animateTransform attributeName="transform" type="translate" values="196 176;196 166;196 176" dur="2.6s" repeatCount="indefinite"/>
+      <use href="#miniball"/>
+    </g>
+  </g>
+
+  <!-- opponent status box -->
+  <g shape-rendering="geometricPrecision">
+    <rect x="34" y="22" width="352" height="72" rx="8" fill="#f7f7f2" stroke="#26262a" stroke-width="4"/>
+    <rect x="42" y="30" width="336" height="56" rx="5" fill="none" stroke="#d3d3c8" stroke-width="2"/>
+    <text x="58" y="54" font-family="'Courier New',monospace" font-size="21" font-weight="bold" fill="#26262a" letter-spacing="1.5">PRIYANSH</text>
+    <text x="362" y="54" text-anchor="end" font-family="'Courier New',monospace" font-size="17" font-weight="bold" fill="#26262a">Lv.21</text>
+    <rect x="58" y="64" width="34" height="16" rx="3" fill="#f0c000"/>
+    <text x="75" y="77" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" font-weight="bold" fill="#26262a">HP</text>
+    <rect x="98" y="66" width="264" height="12" rx="6" fill="#4a4a52"/>
+    <rect x="101" y="69" width="258" height="6" rx="3" fill="url(#hpfill)">
+      <animate attributeName="width" values="258;258;92;92;258" keyTimes="0;0.2;0.55;0.8;1" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="fill" values="#5fd45f;#5fd45f;#f0c000;#f0c000;#5fd45f" keyTimes="0;0.2;0.55;0.8;1" dur="9s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- battle dialogue box -->
+  <g shape-rendering="geometricPrecision">
+    <rect x="20" y="198" width="556" height="52" rx="8" fill="#f7f7f2" stroke="#26262a" stroke-width="4"/>
+    <rect x="28" y="206" width="540" height="36" rx="5" fill="none" stroke="#d3d3c8" stroke-width="2"/>
+    <g font-family="'Courier New',monospace" font-size="19" font-weight="bold" fill="#26262a">
+      <text x="46" y="231">A wild PRIYANSH appeared!<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.31;0.34;1" dur="10.5s" repeatCount="indefinite"/></text>
+      <text x="46" y="231">PRIYANSH used COMMIT!<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.32;0.35;0.64;0.67;1" dur="10.5s" repeatCount="indefinite"/></text>
+      <text x="46" y="231">It was super effective!<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.65;0.68;1" dur="10.5s" repeatCount="indefinite"/></text>
+    </g>
+    <polygon points="546,232 558,232 552,240" fill="#26262a">
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.45;0.5;0.95;1" dur="1.2s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <!-- battle menu -->
+  <g shape-rendering="geometricPrecision">
+    <rect x="590" y="194" width="292" height="60" rx="8" fill="#f7f7f2" stroke="#26262a" stroke-width="4"/>
+    <g font-family="'Courier New',monospace" font-size="15" font-weight="bold" fill="#26262a">
+      <text x="628" y="216">FIGHT</text>
+      <text x="762" y="216">BAG</text>
+      <text x="628" y="240">PKMN</text>
+      <text x="762" y="240">RUN</text>
+    </g>
+    <polygon points="610,208 620,213 610,218" fill="#ee1515">
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.45;0.5;0.95;1" dur="1s" repeatCount="indefinite"/>
+    </polygon>
   </g>
 </svg>

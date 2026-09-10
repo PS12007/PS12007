@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 336" width="900" height="336" role="img" aria-label="Pokemon style trainer card for Priyansh Sharma">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff9d4d"/>
+      <stop offset="55%" stop-color="#f2661b"/>
+      <stop offset="100%" stop-color="#d92c07"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="cardclip">
+      <rect x="30" y="14" width="840" height="304" rx="18"/>
+    </clipPath>
+    <polygon id="bstar" points="20,0 8.32,3.44 14.14,14.14 3.44,8.32 0,20 -3.44,8.32 -14.14,14.14 -8.32,3.44 -20,0 -8.32,-3.44 -14.14,-14.14 -3.44,-8.32 0,-20 3.44,-8.32 14.14,-14.14 8.32,-3.44"/>
+  </defs>
+
+  <rect width="900" height="336" fill="#0d1117"/>
+
+  <!-- card body -->
+  <rect x="30" y="14" width="840" height="304" rx="18" fill="url(#card)" stroke="#7a1c08" stroke-width="4"/>
+  <g clip-path="url(#cardclip)">
+    <rect x="30" y="14" width="840" height="60" fill="#ffffff" opacity="0.13"/>
+    <rect x="-260" y="14" width="150" height="304" fill="url(#sheen)" transform="skewX(-18)">
+      <animate attributeName="x" values="-260;980" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- header -->
+  <text x="60" y="56" font-family="'Courier New',monospace" font-size="24" font-weight="bold" fill="#ffffff" letter-spacing="3">TRAINER CARD</text>
+  <g transform="translate(816,44)">
+    <animateTransform attributeName="transform" type="rotate" values="0 816 44;360 816 44" dur="6s" repeatCount="indefinite" additive="sum"/>
+    <circle cx="0" cy="0" r="16" fill="#f6f6f6" stroke="#17171a" stroke-width="3"/>
+    <path d="M-16 0 A16 16 0 0 1 16 0 Z" fill="#ee1515"/>
+    <rect x="-16.5" y="-2.6" width="33" height="5.2" fill="#17171a"/>
+    <circle cx="0" cy="0" r="5" fill="#f6f6f6" stroke="#17171a" stroke-width="2.6"/>
+  </g>
+
+  <!-- trainer sprite panel -->
+  <rect x="58" y="82" width="188" height="148" rx="10" fill="#fdf6e3" stroke="#7a1c08" stroke-width="3"/>
+  <g shape-rendering="crispEdges">
+    <rect x="70" y="200" width="164" height="26" fill="#cfe8f5"/>
+    <!-- trainer, front facing -->
+    <rect x="128" y="104" width="48" height="12" fill="#ee1515"/>
+    <rect x="122" y="112" width="60" height="8" fill="#ee1515"/>
+    <rect x="122" y="120" width="60" height="4" fill="#f2f2f2"/>
+    <rect x="118" y="118" width="6" height="14" fill="#2b1d16"/>
+    <rect x="180" y="118" width="6" height="14" fill="#2b1d16"/>
+    <rect x="126" y="124" width="52" height="24" fill="#e8b58a"/>
+    <rect x="136" y="132" width="8" height="7" fill="#2b1d16"/>
+    <rect x="160" y="132" width="8" height="7" fill="#2b1d16"/>
+    <rect x="138" y="133" width="3" height="3" fill="#ffffff"/>
+    <rect x="162" y="133" width="3" height="3" fill="#ffffff"/>
+    <rect x="146" y="142" width="12" height="3" fill="#b9764f"/>
+    <rect x="116" y="148" width="72" height="46" fill="#2f4a86"/>
+    <rect x="140" y="148" width="24" height="12" fill="#f2f2f2"/>
+    <rect x="104" y="152" width="14" height="36" fill="#2f4a86"/>
+    <rect x="186" y="152" width="14" height="36" fill="#2f4a86"/>
+    <rect x="104" y="184" width="14" height="10" fill="#e8b58a"/>
+    <rect x="186" y="184" width="14" height="10" fill="#e8b58a"/>
+    <rect x="120" y="194" width="26" height="16" fill="#1b2540"/>
+    <rect x="158" y="194" width="26" height="16" fill="#1b2540"/>
+  </g>
+  <g transform="translate(216,196)" shape-rendering="geometricPrecision">
+    <animateTransform attributeName="transform" type="translate" values="216 196;216 188;216 196" dur="2.4s" repeatCount="indefinite"/>
+    <circle cx="0" cy="0" r="11" fill="#f6f6f6" stroke="#17171a" stroke-width="2.5"/>
+    <path d="M-11 0 A11 11 0 0 1 11 0 Z" fill="#ee1515"/>
+    <rect x="-11.5" y="-2" width="23" height="4" fill="#17171a"/>
+    <circle cx="0" cy="0" r="3.6" fill="#f6f6f6" stroke="#17171a" stroke-width="2"/>
+  </g>
+
+  <!-- data panel -->
+  <rect x="264" y="82" width="578" height="148" rx="10" fill="#fdf6e3" stroke="#7a1c08" stroke-width="3"/>
+  <g font-family="'Courier New',monospace" font-size="17" font-weight="bold" fill="#3a2a18">
+    <text x="286" y="110">NAME</text><text x="822" y="110" text-anchor="end">PRIYANSH SHARMA</text>
+    <text x="286" y="138">ID No.</text><text x="822" y="138" text-anchor="end">12007</text>
+    <text x="286" y="166">MONEY</text><text x="822" y="166" text-anchor="end">$0 &#8212; it all went to VRAM</text>
+    <text x="286" y="194">PARTY</text><text x="822" y="194" text-anchor="end">6 / 6</text>
+    <text x="286" y="222">PLAYTIME</text><text x="822" y="222" text-anchor="end">9999:59</text>
+  </g>
+  <g stroke="#e0d4b4" stroke-width="2" stroke-dasharray="4 5">
+    <line x1="286" y1="118" x2="820" y2="118"/>
+    <line x1="286" y1="146" x2="820" y2="146"/>
+    <line x1="286" y1="174" x2="820" y2="174"/>
+    <line x1="286" y1="202" x2="820" y2="202"/>
+  </g>
+
+  <!-- gym badges -->
+  <text x="60" y="256" font-family="'Courier New',monospace" font-size="13" font-weight="bold" fill="#ffffff" letter-spacing="2">GYM BADGES</text>
+
+  <g>
+    <use href="#bstar" x="109" y="284" fill="#c22e28"/>
+    <use href="#bstar" x="206" y="284" fill="#7ac74c"/>
+    <use href="#bstar" x="304" y="284" fill="#6390f0"/>
+    <use href="#bstar" x="401" y="284" fill="#ee8130"/>
+    <use href="#bstar" x="499" y="284" fill="#c9cbd8"/>
+    <use href="#bstar" x="596" y="284" fill="#f7d02c"/>
+    <use href="#bstar" x="694" y="284" fill="#b45ab0"/>
+    <use href="#bstar" x="791" y="284" fill="#5a3b28" opacity="0.55"/>
+  </g>
+  <g fill="#ffffff" opacity="0.85">
+    <circle cx="109" cy="284" r="5"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="206" cy="284" r="5"><animate attributeName="opacity" values="1;0.3;1" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="304" cy="284" r="5"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="401" cy="284" r="5"><animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="499" cy="284" r="5"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="596" cy="284" r="5"><animate attributeName="opacity" values="1;0.3;1" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="694" cy="284" r="5"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.1s" repeatCount="indefinite"/></circle>
+  </g>
+  <text x="791" y="290" text-anchor="middle" font-family="'Courier New',monospace" font-size="16" font-weight="bold" fill="#2a1a10">?</text>
+
+  <g font-family="'Courier New',monospace" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    <text x="109" y="312">SEGFAULT</text>
+    <text x="206" y="312">CUDA</text>
+    <text x="304" y="312">CACHE</text>
+    <text x="401" y="312">TENSOR</text>
+    <text x="499" y="312">BORROW</text>
+    <text x="596" y="312">LATENCY</text>
+    <text x="694" y="312">VRAM</text>
+    <text x="791" y="312" opacity="0.6">LOCKED</text>
+  </g>
+</svg>
