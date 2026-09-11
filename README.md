@@ -15,7 +15,7 @@ that don't fit in memory and making them fit anyway. Most days that means
 living somewhere between Python notebooks and C++ headers, occasionally
 yelling at a GPU until it cooperates.
 
-- 🔭 currently building **[locret-llamacpp](https://github.com/PS12007/locret-llamacpp)** — KV-cache eviction for `llama.cpp`, trying to get long-context inference to behave on consumer-grade VRAM
+- 🔭 currently building **[locret-llamacpp](https://github.com/PS12007/locret-llamacpp)** — KV-cache eviction for `llama.cpp`, trying to get long-context inference to behave on consumer-grade VRAM (very exciting)
 - 🌱 perpetually learning some corner of low-level systems / ML infra I have no business touching yet
 - 🐛 professionally fluent in reading stack traces at 2am
 - ⚡ fun fact: I trust a plot of the loss curve more than most people's opinions
