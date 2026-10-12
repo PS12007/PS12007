@@ -15,7 +15,10 @@ that don't fit in memory and making them fit anyway. Most days that means
 living somewhere between Python notebooks and C++ headers, occasionally
 yelling at a GPU until it cooperates.
 
-- 🔭 currently building **[locret-llamacpp](https://github.com/PS12007/locret-llamacpp)** — KV-cache eviction for `llama.cpp`, trying to get long-context inference to behave on consumer-grade VRAM (very exciting)
+- 🔭 currently building a few things that all orbit the KV cache:
+  - **[lazykv](https://github.com/PS12007/lazykv)**: a tiered KV-cache runtime that treats the cache like virtual memory across GPU VRAM, CPU RAM and SSD, so long-context inference runs on an 8 GB laptop GPU
+  - **triton-kv-kernel**: a fused Triton kernel that runs decode-step attention directly on a 2/4-bit quantized KV cache, no dequantize pass in between
+  - **[locret-llamacpp](https://github.com/PS12007/locret-llamacpp)**: a native `llama.cpp` port of Locret's learned KV-cache token eviction, trying to get long-context inference to behave on consumer-grade VRAM
 - 🌱 perpetually learning some corner of low-level systems / ML infra I have no business touching yet
 - 🐛 professionally fluent in reading stack traces at 2am
 - ⚡ fun fact: I trust a plot of the loss curve more than most people's opinions
